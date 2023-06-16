@@ -2,15 +2,25 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import AppLoggedIn from "./AppLoggedIn";
 import reportWebVitals from './reportWebVitals';
 import {store} from './store';
 import { Provider } from 'react-redux';
+
+
+function RenderPage(props) {
+  const isLoggedIn = props.isLoggedIn;
+  if (isLoggedIn) {
+    return <AppLoggedIn />;
+  }
+  return <App />;
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-    <App />
+    <RenderPage isLoggedIn={true} />
   </Provider>
   </React.StrictMode>
 );
