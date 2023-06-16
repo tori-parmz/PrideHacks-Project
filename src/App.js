@@ -20,7 +20,6 @@ function App() {
         <Route index element={<LandingPage />} />
         <Route path="login" element={<Login />} />
         <Route path="blog" element={<Blog />} />
-        <Route path="landing-page" element={<LandingPage />} />
         <Route path="user/" element={<User />} />
         <Route path="home" element={<UserHome />} />
         <Route path="channel/" element={<Channel />} />
