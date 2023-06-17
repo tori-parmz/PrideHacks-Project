@@ -3,9 +3,6 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 class NewsFeedCards extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render () {
     return (
