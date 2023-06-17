@@ -76,3 +76,25 @@
 #search-bar {
   border-radius: 30px;
 }
+
+#messages-icon {
+  background: #A881FD;
+  border: none;
+  border-radius: 15px;
+
+}
+
+#events-icon {
+  background: #A3FFD3;
+  border: none;
+  border-radius: 15px;
+
+}
+
+#community-icon {
+  border-radius: 15px;
+}
+
+#channel-menu-avatar {
+  border-radius: 50%;
+}

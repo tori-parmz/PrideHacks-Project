@@ -2,7 +2,7 @@ import Card from 'react-bootstrap/Card';
 
 function MessagesIcon() {
     return (
-        <Card style={{ width: '5em'}}>
+        <Card style={{ width: '4rem'}} id='messages-icon'>
             <Card.Body>
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
             <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
