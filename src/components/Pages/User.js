@@ -12,31 +12,15 @@ function Layout() {
   return (
     <>
       <Navbar expand="lg" className="navbar">
-        <Container>
-          <LinkContainer to="/">
-            <Navbar.Brand>Pride Hacks Project</Navbar.Brand>
-          </LinkContainer>
+        <Container fluid>
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <LinkContainer to="/">
-                <Nav.Link>Home</Nav.Link>
-              </LinkContainer>
-              <LinkContainer to="userblog">
-                <Nav.Link>Blog</Nav.Link>
-              </LinkContainer>
-              <LinkContainer to="newsfeed">
-                <Nav.Link>Newsfeed</Nav.Link>
-              </LinkContainer>
-
-              <NavDropdown title="Account" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Profile</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <LinkContainer to="/">
-                  <NavDropdown.Item>Log Out</NavDropdown.Item>
-                </LinkContainer>
-              </NavDropdown>
+          <Navbar.Collapse id="justify-content-end">
+            <Nav className="ms-auto">
+            <Nav.Link href="#home">Notifications on/off</Nav.Link>
+            <Nav.Link href="#home">Darkmode</Nav.Link>
+            <Nav.Link href="#home">Logout</Nav.Link>
+  
             </Nav>
             <Form className="d-flex">
               <Form.Control
@@ -46,23 +30,22 @@ function Layout() {
                 aria-label="Search"
                 id="search-bar"
               />
-              <Button variant="outline-success">Search</Button>
             </Form>
           </Navbar.Collapse>
         </Container>
       </Navbar>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-1">
+          <div className="col-1" id="left-nav-backgroud">
             <LeftHandNav />
           </div>
-          <div className="col-9">
+          <div className="col-9" id="app-col">
             <div className="App-header">
               {/* Outlet renders each page in the App-header div */}
               <Outlet />
             </div>
           </div>
-          <div className="col-2">
+          <div className="col-2" id="menu-col">
             <ProfileMenu />
           </div>
         </div>

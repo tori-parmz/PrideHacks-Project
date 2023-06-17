@@ -40,8 +40,8 @@ function Layout() {
               placeholder="Search"
               className="me-2"
               aria-label="Search"
+              id="search-bar"
             />
-            <Button variant="outline-success">Search</Button>
           </Form>
           </Navbar.Collapse>
         </Container>

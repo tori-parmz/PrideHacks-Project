@@ -1,12 +1,9 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import LeftHandNav from '../LeftHandNav/LeftHandNav';
-import ChannelMenu from '../ChannelMenu/ChannelMenu';
 
 function Newsfeed() {
     return (
       <>
-      <ChannelMenu />
       <section>
       <Card style={{ width: '18rem' }}>
         <Card.Body>

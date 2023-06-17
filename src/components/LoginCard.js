@@ -1,9 +1,8 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
-import { useState } from 'react';
 
-function LoginCard(props) {
+function LoginCard() {
     return (
         <Card style={{ width: '18rem' }}>
         <Card.Body>
