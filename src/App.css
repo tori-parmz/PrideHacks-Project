@@ -17,6 +17,7 @@
   font-size: calc(10px + 2vmin);
   max-height: 100%;
   padding-right: 0;
+  padding-left: 0;
   margin-left: 0;
   color: white;
 }
@@ -47,15 +48,10 @@
 .left-nav-list {
   list-style-type: none;
   padding-left: 1rem;
-  padding-right: 1rem;
+  padding-right: 0;
   margin: 0;
 }
 
-#left-nav-backgroud {
-  background: #FFFFFF;
-  margin-right: 0;
-  padding-right: 0;
-}
 
 .channel-menu {
   position: absolute;
@@ -63,6 +59,13 @@
   min-height: 100%;
   top: 0px;
   background: #FFDEEA;
+  left: 94px;
+}
+
+#channel-menu-art{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
 
 #channel-menu-col {
@@ -101,6 +104,14 @@
 
 #community-icon {
   border-radius: 15px;
+  height: 4rem;
+  width: 4rem;
+}
+
+#add-community-icon {
+  background: #FFDEEA;
+  border-radius: 15px;
+  border: none;
   height: 4rem;
   width: 4rem;
 }

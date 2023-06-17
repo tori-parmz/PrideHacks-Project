@@ -5,14 +5,11 @@ import * as React from 'react';
 function ProfileMenu() {
     return (
     <div className='profile-menu'>
-    <Nav className="flex-column">
-      <Nav.Link href="/home">Active</Nav.Link>
-      <Nav.Link eventKey="link-1">Link</Nav.Link>
-      <Nav.Link eventKey="link-2">Link</Nav.Link>
-      <Nav.Link eventKey="disabled" disabled>
-        Disabled
-      </Nav.Link>
-    </Nav>
+    <ul className='left-nav-list'>
+        <li><a href='#'><p>One</p></a></li>
+        <li><a href='#'><p>Two</p></a></li>
+        <li><a href='#'><p>Three</p></a></li>
+         </ul>
     </div>
 
     );

@@ -3,6 +3,7 @@ import MessagesIcon from './MessagesIcon';
 import EventsIcon from './EventsIcon';
 import CommunityIcon from './CommunityIcon';
 import Box from '@mui/material/Box';
+import AddCommunityButton from './AddCommunityButton';
 
 
 function LeftHandNav() {
@@ -14,6 +15,7 @@ function LeftHandNav() {
         <li><MessagesIcon /></li>
         <li><EventsIcon /></li>
         <li><CommunityIcon communityImage={'./pride_celebration.jpg'} /></li>
+        <li><AddCommunityButton /></li>
     </ul>
     </Box>
 
