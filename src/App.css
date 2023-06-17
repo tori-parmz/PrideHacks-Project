@@ -1,15 +1,62 @@
-.App {
-  text-align: center;
+.navbar {
+  background: #A3FFD3;
 }
 
+#navbar {
+  background: #A3FFD3;
+}
 
 .App-header {
-  background-color: #282c34;
+  background: linear-gradient(180deg, rgba(200, 211, 255, 0) 36.98%, #C8D3FF 100%);
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
   font-size: calc(10px + 2vmin);
+  padding-right: 0;
   color: white;
+}
+
+.left-hand-nav {
+  
+  background: #FFFFFF;
+  position: absolute;
+  width: 94px;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+
+}
+
+.channel-menu {
+  
+  background: #FFDEEA;
+  width: 20rem;
+
+}
+
+.card-body.expanded {
+  width: 100%;
+}
+
+.left-nav-list {
+  list-style-type: none;
+}
+
+.channel-menu {
+  position: absolute;
+  width: 324px;
+  height: 100%;
+  left: 94px;
+  top: 0px;
+}
+
+.profile-menu {
+  background: linear-gradient(180deg, #A881FD 0%, rgba(249, 182, 255, 0) 100%);
+  width: 236px;
+  height: 100%;
+  padding-left: 0;
+}
+
+#search-bar {
+  border-radius: 12px;
 }

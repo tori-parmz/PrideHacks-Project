@@ -1,8 +1,10 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import LeftHandNav from '../LeftHandNav/LeftHandNav';
 
 function UserHome() {
     return (
+      <>
       <Card style={{ width: '18rem' }}>
         <Card.Body>
           <Card.Title>This is the user's homepage</Card.Title>
@@ -13,6 +15,7 @@ function UserHome() {
           <Button variant="primary">Go somewhere</Button>
         </Card.Body>
       </Card>
+      </>
     );
   }
   

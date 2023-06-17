@@ -4,11 +4,12 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { Form, Button, } from "react-bootstrap";
 
 function Layout() {
   return (
     <>
-      <Navbar bg="light" expand="lg">
+      <Navbar expand="lg" className="navbar">
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand>Pride Hacks Project</Navbar.Brand>
@@ -33,6 +34,15 @@ function Layout() {
                 </LinkContainer>
               </NavDropdown>
             </Nav>
+            <Form className="d-flex">
+            <Form.Control
+              type="search"
+              placeholder="Search"
+              className="me-2"
+              aria-label="Search"
+            />
+            <Button variant="outline-success">Search</Button>
+          </Form>
           </Navbar.Collapse>
         </Container>
       </Navbar>
