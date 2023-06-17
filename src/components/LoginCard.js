@@ -56,11 +56,12 @@ function LoginCard() {
         marginTop: "150px",
         marginLeft: "auto",
         marginRight: "auto",
-        fontFamily: "Times New Roman",
         fontSize: "25px",
       }}
+      
+
     >
-      <Card style={{ padding: "90px" }}>
+      <Card style={{ padding: "90px" }} className="landing-page-cards">
         <Button variant="primary" size="lg" block onClick={handleGoogleLogin}>
           Log in with Google
         </Button>

@@ -145,3 +145,7 @@ body {
   
 
 }
+
+.landing-page-cards {
+  background: linear-gradient(180deg, #908AFD 0%, rgba(138, 161, 253, 0) 100%);
+}

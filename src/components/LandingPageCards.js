@@ -1,5 +1,4 @@
 import { React, Component } from "react";
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 class LandingPageCards extends Component {
   constructor(props) {
@@ -10,7 +9,7 @@ class LandingPageCards extends Component {
     return (
       
       <div>
-          <Card style={{height: '250px', padding: '10px', margin: '10px', borderRadius: '15px', fontSize: '16px' }} >
+          <Card style={{height: '250px', padding: '10px', margin: '10px', borderRadius: '15px', fontSize: '16px', border: 'none'}} className="landing-page-cards" >
           <Card.Body>
             <Card.Title style={{textAlign: 'center'}}>{this.props.cards.title}</Card.Title>
             <Card.Text>
