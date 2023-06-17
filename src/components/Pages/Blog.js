@@ -1,38 +1,45 @@
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import { React, Component } from 'react';
+import React from "react";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import { useNavigate } from "react-router-dom";
+import LoginCard from "../LoginCard";
 
+const Login = () => {
+  const navigate = useNavigate();
 
-class Blog extends Component {
-  render () {
-    return (
-      <div 
+  const handleLoginClick = () => {
+    navigate("/login");
+  };
+
+  return (
+    <div
       style={{
         display: "flex",
         alignItems: "center",
         height: "100%",
-        width: '30%',
+        width: "30%",
         marginTop: "150px",
         marginLeft: "auto",
         marginRight: "auto",
-        fontFamily: 'Times New Roman',
-        fontSize: '25px',
-        padding: '15px'
+        fontFamily: "Times New Roman",
+        fontSize: "25px",
+        padding: "15px",
       }}
-      >
-        <Card>
+    >
+      <Card>
         <Card.Body>
           <Card.Text>
             Only members can view blogs. Login to view blogs
           </Card.Text>
           <div className="d-grid gap-2">
-            <Button variant="primary" size='lg'>Login</Button>
-          </div>  
+            <Button variant="primary" size="lg" onClick={handleLoginClick}>
+              Login
+            </Button>
+          </div>
         </Card.Body>
       </Card>
-      </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
-export default Blog;
+export default Login;
