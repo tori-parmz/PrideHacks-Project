@@ -4,13 +4,13 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { Form, Button, } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 
 function Layout() {
   return (
     <>
     <div className="App-guest">
-      <Navbar expand="lg" className="navbar">
+      <Navbar expand="lg" className="navbar" fixed="top">
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand>Pride Hacks Project</Navbar.Brand>
@@ -48,8 +48,8 @@ function Layout() {
         </Container>
       </Navbar>
 
-      <div className="App-header-guest">
-        <div className="container">
+      <div className="App-header">
+        <div className="container" id="page-content">
         {/* Outlet renders each page in the App-header div */}
         <Outlet />
         </div>

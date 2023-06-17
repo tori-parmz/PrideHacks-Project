@@ -6,9 +6,10 @@
   background: #A3FFD3;
 }
 
-.App {
+body {
   height: 100vh;
   background: linear-gradient(180deg, rgba(200, 211, 255, 0) 36.98%, #C8D3FF 100%);
+  background-attachment: fixed;
 }
 
 .App-header {
@@ -23,21 +24,8 @@
   color: white;
 }
 
-.App-header-guest {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  max-height: 100%;
-  padding-right: 0;
-  padding-left: 0;
-  margin-left: 0;
-  color: white;
-}
-
-.App-guest {
-  height: 100%;
-  background: linear-gradient(180deg, rgba(200, 211, 255, 0) 36.98%, #C8D3FF 100%);
+#page-content {
+  padding-top: 5rem;
 }
 
 #app-col {
@@ -148,4 +136,12 @@
   height:  100%;
   position:fixed;
   left: 418px;
+}
+
+.landing-page-header {
+  border-radius: 40px;
+  height: 420px;
+  object-fit: cover;
+  
+
 }

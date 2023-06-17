@@ -6,7 +6,8 @@ import Row from 'react-bootstrap/Row';
 
 import LandingPageCards from "../LandingPageCards";
 
-import landingPageImage from '../../landing_page_images/pride_parade.jpg';
+import landingPageImage from '../../assets/landing-page-header.png';
+ 
 
 class LandingPage extends Component {
   constructor() {
@@ -46,7 +47,7 @@ class LandingPage extends Component {
     return (
       <Container fluid>
         <Row>
-        <Card.Img src={landingPageImage} height={400} />
+        <img src={landingPageImage} className="landing-page-header" />
         </Row>
         <Row>
           {landingPageCards}
