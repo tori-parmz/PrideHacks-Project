@@ -46,7 +46,7 @@ class LandingPage extends Component {
     return (
       <Container fluid>
         <Row>
-        <Card.Img src={landingPageImage} height={350} />
+        <Card.Img src={landingPageImage} height={400} />
         </Row>
         <Row>
           {landingPageCards}

@@ -1,19 +1,38 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { React, Component } from 'react';
 
-function Blog() {
-  return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Body>
-        <Card.Title>This is the Blog</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
-  );
+
+class Blog extends Component {
+  render () {
+    return (
+      <div 
+      style={{
+        display: "flex",
+        alignItems: "center",
+        height: "100%",
+        width: '30%',
+        marginTop: "150px",
+        marginLeft: "auto",
+        marginRight: "auto",
+        fontFamily: 'Times New Roman',
+        fontSize: '25px',
+        padding: '15px'
+      }}
+      >
+        <Card>
+        <Card.Body>
+          <Card.Text>
+            Only members can view blogs. Login to view blogs
+          </Card.Text>
+          <div className="d-grid gap-2">
+            <Button variant="primary" size='lg'>Login</Button>
+          </div>  
+        </Card.Body>
+      </Card>
+      </div>
+    );
+  }
 }
 
 export default Blog;
