@@ -9,6 +9,7 @@ import { Form, Button, } from "react-bootstrap";
 function Layout() {
   return (
     <>
+    <div className="App-guest">
       <Navbar expand="lg" className="navbar">
         <Container>
           <LinkContainer to="/">
@@ -47,9 +48,12 @@ function Layout() {
         </Container>
       </Navbar>
 
-      <div className="App-header">
+      <div className="App-header-guest">
+        <div className="container">
         {/* Outlet renders each page in the App-header div */}
         <Outlet />
+        </div>
+      </div>
       </div>
     </>
   );
