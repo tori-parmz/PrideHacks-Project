@@ -1,35 +1,38 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
 
 function LoginCard() {
-  return (
-    <Card style={{ width: "18rem" }}>
-      <Card.Body>
-        <Card.Title>This is the Login</Card.Title>
-        <Form>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
-          </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" />
-          </Form.Group>
-          <Form.Group
-            className="mb-3"
-            controlId="formBasicCheckbox"
-          ></Form.Group>
-          <Button variant="primary" type="submit">
-            Submit
+  return (
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        height: "100%",
+        width: '30%',
+        marginTop: "150px",
+        marginLeft: "auto",
+        marginRight: "auto",
+        fontFamily: 'Times New Roman',
+        fontSize: '25px'
+    }}
+    >
+      <Card style={{padding: '90px'}}>
+        <Button 
+          variant="primary" size="lg" block
+          >
+            Log in with Google
+        </Button>
+        <br />
+        <Button 
+        
+          variant="primary" size="lg" block
+          >
+          Log in with Discord
           </Button>
-        </Form>
-      </Card.Body>
-    </Card>
+      </Card>
+    </div>
   );
 }
 
 export default LoginCard;
-//mZ7hrFDI0eERyqAt
-//insaneengineer6
