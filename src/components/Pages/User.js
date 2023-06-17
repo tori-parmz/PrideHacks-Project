@@ -11,6 +11,7 @@ import { Form, Button } from "react-bootstrap";
 function Layout() {
   return (
     <>
+    <div className="App">
       <Navbar expand="lg" className="navbar">
         <Container fluid>
 
@@ -49,6 +50,7 @@ function Layout() {
             <ProfileMenu />
           </div>
         </div>
+      </div>
       </div>
     </>
   );
