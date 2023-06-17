@@ -23,10 +23,10 @@ const Login = () => {
         marginRight: "auto",
         fontFamily: "Times New Roman",
         fontSize: "25px",
-        padding: "15px",
+        
       }}
     >
-      <Card>
+      <Card style={{padding: '40px'}}>
         <Card.Body>
           <Card.Text>
             Only members can view blogs. Login to view blogs
