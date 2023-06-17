@@ -1,23 +1,61 @@
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import { Component } from 'react';
 
-function Newsfeed() {
-    return (
-      <>
-      <section>
-      <Card style={{ width: '18rem' }}>
-        <Card.Body>
-          <Card.Title>This is the Newsfeed</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
-      </Card>
-      </section>
-      </>
-    );
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+
+
+import NewsFeedCards from "../NewsFeedCards";
+
+class Newsfeed extends Component {
+  constructor() {
+    super();
+    this.state = {
+      cards: [
+        { 
+          title: 'About Us',
+          description: 'lore`m ipsum',
+          link: 'https://www.google.com'
+        },
+        { 
+          title: 'Our Mission',
+          description: 'lorem ipsum',
+          link: 'https://www.google.com'
+        },
+        { 
+          title: 'Our Values',
+          description: 'lorem ipsum',
+          link: 'https://www.google.com'
+        },
+        { 
+          title: 'Join Our Community',
+          description: 'lorem ipsum',
+          link: 'https://www.google.com'
+        } 
+      ]
+    }
   }
+
+  render () {
+    
+    let newsFeedCards = this.state.cards.map(cards => {
+      return (
+        <Col xs={12} md={6}>
+          <NewsFeedCards cards={cards} />
+          <br />
+        </Col>
+      )
+    })
+
+    return (
+      <Container fluid>
+        <Row>
+          {newsFeedCards}
+        </Row>
+      </Container>
+     );
+   }
+    
+}
   
-  export default Newsfeed;
+export default Newsfeed;
