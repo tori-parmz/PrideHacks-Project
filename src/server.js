@@ -2,7 +2,7 @@ const express = require("express");
 const mongodb = require("mongodb");
 
 const app = express();
-const port = 3000; // You can change this port number if needed
+const port = 3001; // You can change this port number if needed
 
 // MongoDB connection URI
 const mongoURI =
