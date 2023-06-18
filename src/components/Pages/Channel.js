@@ -5,24 +5,10 @@ function Channel() {
     return (
       <>
       <ChannelMenu />
-      <div className='container-fluid' id='channel-container'>
-        <div className='row'>
-          <div className='col-2'>
-          
-          </div>
-          <div className='col-8'>
-            <div className='container'>
+      
+            <div className='chat-space'>
             <ChannelChat />
-
             </div>
-          
-
-          </div>
-          <div className='col-2'>
-
-          </div>
-        </div>
-      </div>
       
       
       </>

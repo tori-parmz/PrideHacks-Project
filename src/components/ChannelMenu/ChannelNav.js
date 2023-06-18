@@ -1,20 +1,65 @@
-import Accordion from 'react-bootstrap/Accordion';
+import * as React from 'react';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-function ChannelNav() {
+export default function ChannelNav() {
   return (
-    <Accordion id='channel-nav'>
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>Accordion Item #1</Accordion.Header>
-        <Accordion.Body>
-        <ul className='left-nav-list'>
-        <li><a href='#'><p>One</p></a></li>
-        <li><a href='#'><p>Two</p></a></li>
-        <li><a href='#'><p>Three</p></a></li>
+    <div>
+      <Accordion id="channel-nav">
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+          
+        >
+          <Typography>Accordion 1</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+        <ul className='nav-lists' id='accordion-text'>
+        <li><p>#Channel-one</p></li>
+        <li><p>#Channel-two</p></li>
+        <li><p>#Channel-three</p></li>
          </ul>
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion id="channel-nav">
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+          
+        >
+          <Typography>Accordion 1</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+        <ul className=' nav-lists' id='accordion-text'>
+        <li><p>#Channel-one</p></li>
+        <li><p>#Channel-two</p></li>
+        <li><p>#Channel-three</p></li>
+         </ul>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion id="channel-nav">
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+          
+        >
+          <Typography>Accordion 1</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+        <ul className='nav-lists' id='accordion-text'>
+        <li><p>#Channel-one</p></li>
+        <li><p>#Channel-two</p></li>
+        <li><p>#Channel-three</p></li>
+         </ul>
+        </AccordionDetails>
+      </Accordion>
+
+    </div>
   );
 }
-
-export default ChannelNav;

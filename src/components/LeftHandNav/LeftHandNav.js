@@ -4,6 +4,7 @@ import EventsIcon from './EventsIcon';
 import CommunityIcon from './CommunityIcon';
 import Box from '@mui/material/Box';
 import AddCommunityButton from './AddCommunityButton';
+import PridePhoto from '../../assets/pride_celebration.jpg'
 
 
 function LeftHandNav() {
@@ -11,10 +12,13 @@ function LeftHandNav() {
         <Box
         className='left-hand-nav'
         >
-    <ul className='left-nav-list'>
+    <ul className='nav-lists'>
         <li><MessagesIcon /></li>
+        <br></br>
         <li><EventsIcon /></li>
-        <li><CommunityIcon communityImage={'./pride_celebration.jpg'} /></li>
+        <br></br>
+        <li><CommunityIcon communityImage={PridePhoto} /></li>
+        <br></br>
         <li><AddCommunityButton /></li>
     </ul>
     </Box>

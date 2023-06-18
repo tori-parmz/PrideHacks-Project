@@ -1,7 +1,7 @@
 function CommunityArt(props) {
     const { communityImage } = props;
     return (
-        <img src={'./pride_celebration.jpg'} height={"200px"} className="channel-menu-avatar" />
+        <img src={communityImage} height={"200px"} width={"200px"} id="channel-menu-avatar" />
     )
 }
 
