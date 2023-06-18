@@ -9,6 +9,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import User from './components/Pages/User';
 import Communities from './components/Pages/Communities'
 
+//nested route
+//extending url needs hierarchy
+//file structure
+//when you have a path, make sure you care 
+//url global extension
+//previous structure 
+
 function AppLoggedIn() {
   return (
     <Router>
@@ -16,7 +23,7 @@ function AppLoggedIn() {
       <Route path="/" element={<User />}>
         <Route index element={<UserHome />} />
         <Route path="blog" element={<UserBlog />} />
-        <Route path="channel/" element={<Channel />} />
+        <Route path="channel" element={<Channel />} />
         <Route path="newsfeed" element={<Newsfeed />} />
         <Route path="communities" element={<Communities />} />
         <Route path="*" element={<NoPage />} />

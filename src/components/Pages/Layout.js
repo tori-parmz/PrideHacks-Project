@@ -27,9 +27,6 @@ function Layout() {
               </LinkContainer>
 
               <NavDropdown title="Account" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Profile</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Sign Up</NavDropdown.Item>
-                <NavDropdown.Divider />
                 <LinkContainer to="login">
                   <NavDropdown.Item>Login</NavDropdown.Item>
                 </LinkContainer>

@@ -3,15 +3,15 @@ import * as React from 'react';
 import CommunityArt from './CommunityArt';
 import { Button } from 'react-bootstrap';
 import ChannelInfoCard from './ChannelInfoCard';
-import PridePhoto from '../../assets/pride_celebration.jpg';
 
 
-function ChannelMenu() {
+function ChannelMenu(props) {
+    const { image, name, onlineMembers } = props;
     return (
     <div className='channel-menu'>
         <div className='container'>
-        <CommunityArt communityImage={PridePhoto} />
-        <ChannelInfoCard />
+        <CommunityArt communityImage={image} />
+        <ChannelInfoCard name={name} onlineMembers={onlineMembers}/>
         </div>
         <ChannelNav />
         <Button id='channel-nav-buttons'>Newsfeed</Button>

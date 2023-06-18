@@ -269,6 +269,8 @@ textarea {
 #blog-page-scroll {
   height: 40rem;
   overflow: scroll;
+  padding: 2rem;
+  margin-right: 2rem;
 }
 
 #welcome-header{

@@ -1,13 +1,14 @@
 import ChannelMenu from '../ChannelMenu/ChannelMenu';
 import ChannelChat from '../ChannelChat/ChannelChat';
 
-function Channel() {
+function Channel(props) {
+  const { name, onlineMembers, image } = props;
     return (
       <>
       <ChannelMenu />
       
             <div className='chat-space'>
-            <ChannelChat />
+            <ChannelChat name={name} image={image} onlineMembers={onlineMembers} />
             </div>
       
       

@@ -5,61 +5,38 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-export default function ChannelNav() {
+export default function ChannelNav(props) {
+    const { community } = props;
+    const { topics } = community;
   return (
     <div>
-      <Accordion id="channel-nav">
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-          
-        >
-          <Typography>Accordion 1</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-        <ul className='nav-lists' id='accordion-text'>
-        <li><p>#Channel-one</p></li>
-        <li><p>#Channel-two</p></li>
-        <li><p>#Channel-three</p></li>
-         </ul>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion id="channel-nav">
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-          
-        >
-          <Typography>Accordion 1</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-        <ul className=' nav-lists' id='accordion-text'>
-        <li><p>#Channel-one</p></li>
-        <li><p>#Channel-two</p></li>
-        <li><p>#Channel-three</p></li>
-         </ul>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion id="channel-nav">
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-          
-        >
-          <Typography>Accordion 1</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-        <ul className='nav-lists' id='accordion-text'>
-        <li><p>#Channel-one</p></li>
-        <li><p>#Channel-two</p></li>
-        <li><p>#Channel-three</p></li>
-         </ul>
-        </AccordionDetails>
-      </Accordion>
-
+        {topics.map((topic, index) => {
+          return (
+            <Accordion key={index} id="channel-nav"
+            topic={topic}
+                {...topic}
+            >
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+              
+            >
+              <Typography>{topic.title}</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+            <ul className='nav-lists' id='accordion-text'>
+            {topic.channels.map((channel, index) => {
+                return (
+                    <li key={index}><p>{channel}</p></li>
+                )
+            })}
+             </ul>
+            </AccordionDetails>
+          </Accordion>
+          );
+        })}
+      
     </div>
   );
 }
