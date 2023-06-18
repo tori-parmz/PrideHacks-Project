@@ -44,7 +44,8 @@ class UserHome extends Component {
       )
     })
     return (
-      <Container fluid>
+      <Container fluid id="landing-page-scroll">
+          <p className="display-4" id="welcome-header">Welcome to -Name Here-</p>
         <Row>
         <img src={landingPageImage} className="landing-page-header" />
         </Row>

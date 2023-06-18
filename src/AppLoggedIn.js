@@ -7,17 +7,18 @@ import Newsfeed from "./components/Pages/Newsfeed";
 import NoPage from "./components/Pages/NoPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import User from './components/Pages/User';
+import Communities from './components/Pages/Communities'
 
 function AppLoggedIn() {
   return (
     <Router>
     <Routes>
       <Route path="/" element={<User />}>
-        {/* home page renders collection grid */}
         <Route index element={<UserHome />} />
-        <Route path="userblog" element={<UserBlog />} />
+        <Route path="blog" element={<UserBlog />} />
         <Route path="channel/" element={<Channel />} />
         <Route path="newsfeed" element={<Newsfeed />} />
+        <Route path="communities" element={<Communities />} />
         <Route path="*" element={<NoPage />} />
       </Route>
     </Routes>

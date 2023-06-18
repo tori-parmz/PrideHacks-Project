@@ -7,7 +7,7 @@
 }
 
 body {
-  height: 100vh;
+  max-height: 100vh;
   background: linear-gradient(180deg, rgba(200, 211, 255, 0) 36.98%, #C8D3FF 100%);
   background-attachment: fixed;
 }
@@ -22,6 +22,7 @@ body {
   padding-left: 0;
   margin-left: 0;
   color: white;
+  overflow: scroll;
 }
 
 #page-content {
@@ -258,4 +259,21 @@ textarea {
   margin-left: 1rem;
   margin-bottom: 0;
   margin-top: 2rem;
+}
+
+#landing-page-scroll {
+  height: 40rem;
+  overflow: scroll;
+}
+
+#blog-page-scroll {
+  height: 40rem;
+  overflow: scroll;
+}
+
+#welcome-header{
+  color: black;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }

@@ -133,7 +133,7 @@ function BlogCard({ title, imageSrc, content }) {
 
 function UserBlog() {
   return (
-    <Container>
+    <Container id="blog-page-scroll">
       <Row>
         <Col xs={12} md={6}>
           <BlogCard
