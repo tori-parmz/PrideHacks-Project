@@ -68,3 +68,85 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+
+
+
+# SafeHeaven
+
+SafeHeaven is a web application where LGBTQIA+ individuals can join, chat, and read blogs in a safe and inclusive environment. Users can log in using their Google or Discord accounts to access the platform's features.
+
+![SafeHeaven Logo](https://example.com/safeheaven_logo.png)
+![Google Logo](https://example.com/google_logo.png)
+![Discord Logo](https://example.com/discord_logo.png)
+![MLH Logo](https://example.com/mlh_logo.png)
+
+## Overview
+
+SafeHeaven is built using modern web technologies such as React, Node.js, MongoDB, and Redux. It provides a user-friendly interface for connecting with like-minded individuals, engaging in conversations, and exploring informative blog posts related to LGBTQIA+ topics.
+
+## Technologies Used
+
+SafeHeaven is built using the following technologies:
+
+- React: A JavaScript library for building user interfaces.
+- Node.js: A JavaScript runtime environment for server-side development.
+- MongoDB: A NoSQL database for storing and retrieving data.
+- Redux: A predictable state container for managing application state.
+- NPM: A package manager for installing and managing project dependencies.
+
+## Getting Started
+
+To run the SafeHeaven web app locally, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/your-username/safeheaven.git`
+2. Navigate to the project directory: `cd safeheaven`
+3. Install the dependencies: `npm install`
+4. Start the development server: `npm start`
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
+
+## Available Scripts
+
+In the project directory, you can run the following scripts:
+
+### `npm start`
+
+Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode. See the [running tests](https://facebook.github.io/create-react-app/docs/running-tests) documentation for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder. It optimizes the build for the best performance and prepares the app for deployment.
+
+### `npm run eject`
+
+**Note: This is a one-way operation. Once you eject, you can't go back!**
+
+Ejecting from Create React App allows you to have full control over the configuration and dependencies of your project. It's an irreversible process and should be done with caution.
+
+## Learn More
+
+To learn more about Create React App and React.js, check out the following resources:
+
+- [Create React App Documentation](https://facebook.github.io/create-react-app/docs/getting-started)
+- [React Documentation](https://reactjs.org/)
+
+## Deployment
+
+To deploy the SafeHeaven web app to a production environment, you can follow the instructions provided in the [deployment documentation](https://facebook.github.io/create-react-app/docs/deployment) of Create React App.
+
+## Contributing
+
+Contributions to SafeHeaven are welcome! If you'd like to contribute, please follow the [contribution guidelines](CONTRIBUTING.md) of the project.
+
+## License
+
+SafeHeaven is open-source and released under the [MIT License](LICENSE).
