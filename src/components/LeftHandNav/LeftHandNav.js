@@ -5,6 +5,7 @@ import CommunityIcon from './CommunityIcon';
 import Box from '@mui/material/Box';
 import AddCommunityButton from './AddCommunityButton';
 import PridePhoto from '../../assets/pride_celebration.jpg'
+import { LinkContainer } from "react-router-bootstrap";
 
 
 function LeftHandNav() {
@@ -19,7 +20,7 @@ function LeftHandNav() {
         <br></br>
         <li><CommunityIcon communityImage={PridePhoto} /></li>
         <br></br>
-        <li><AddCommunityButton /></li>
+        <LinkContainer to="communities"><li><AddCommunityButton /></li></LinkContainer>
     </ul>
     </Box>
 
