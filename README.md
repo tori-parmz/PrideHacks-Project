@@ -75,78 +75,53 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
+BLOOMLY
 
+## Inspiration 💡
+Promoting Inclusivity and Equality
+Filling a Gap in Online Spaces (reducing the lack of dedicated online platforms that specifically cater to the needs of the community)
+Empowering Community Voices
+Combating Isolation and Loneliness
+Providing Resources and Support for their voice
+Creating a Positive Online Experience
 
-# SafeHaven
+## What it does 🤔
+People could chat with one other
+They could post blogs.
+FAQ Sections
+Micro Social Network
 
-SafeHaven is a web application where LGBTQIA+ individuals can join, chat, and read blogs in a safe and inclusive environment. Users can log in using their Google or Discord accounts to access the platform's features.
+## How we built it 🎨
+React.js on the front-end with styling done in Material UI
+Firebase for OAuth
+Socket.io for Chat
+Node + Express for Backend
+Figma, Photoshop and After Effects for designing & crafting assets
 
-![SafeHeaven Logo](https://example.com/safeheaven_logo.png)
-![Google Logo](https://example.com/google_logo.png)
-![Discord Logo](https://example.com/discord_logo.png)
-![MLH Logo](https://example.com/mlh_logo.png)
+## Design 🎨
+We were heavily inspired by the revised version of Double Diamond design process, which not only includes visual design, but a full-fledged research cycle in which you must discover and define your problem before tackling your solution & then finally deploy it.
 
-## Overview
+## Double-Diamond
 
-SafeHaven is built using modern web technologies such as React, Node.js, MongoDB, and Redux. It provides a user-friendly interface for connecting with like-minded individuals, engaging in conversations, and exploring informative blog posts related to LGBTQIA+ topics.
+Discover: a deep dive into the problem we are trying to solve.
+Define: synthesizing the information from the discovery phase into a problem definition.
+Develop: think up solutions to the problem.
+Deliver: pick the best solution and build that.
+Moreover, we utilized design tools like Figma, Photoshop & Illustrator to prototype our designs before doing any coding. Through this, we are able to get iterative feedback so that we spend less time re-writing code.
 
-## Technologies Used
+## Challenges we ran into 😤
+We built the whole project from scratch which involved crafting a ton of UI components which we had to plug in with the backend. Furthermore, we invested a lot of time in finetuning the whole UX flow later on which did unnecessarily consumed a bit of time.
 
-SafeHaven is built using the following technologies:
+## Accomplishments that we're proud of ✨
+We are proud of finishing the project on time which seemed like a tough task as we started working on it quite late due to other commitments. We were also able to add most of the features that we envisioned for the app during ideation. And as always, working overnight was pretty fun! :)
 
-- React: A JavaScript library for building user interfaces.
-- Node.js: A JavaScript runtime environment for server-side development.
-- MongoDB: A NoSQL database for storing and retrieving data.
-- Redux: A predictable state container for managing application state.
-- NPM: A package manager for installing and managing project dependencies.
+This project was a notable accomplishment for us because it presented a unique experience compared to other generic hackathons. We engaged in thorough brainstorming and extensive research, which culminated in a satisfying sense of accomplishment upon successfully completing the project.
 
-## Getting Started
+## What we learned 🙌
+Proper sleep is very important! :p Well, a lot of things, both summed up in technical & non-technical sides. Also not to mention, we enhanced our googling and Stackoverflow searching skills during the hackathon :)
 
-To run the SafeHeaven web app locally, follow these steps:
+## What's next for Bloomly 🚀
+We believe that our App has great potential. We just really want this project to have a positive impact on people's lives! We would love to make it more scalable & cross-platform so that the user interaction increases to a great extent. Additionally, we intend to continue improving the UI & integrating specialized features for an even more premium experience.
 
-1. Clone the repository: `git clone https://github.com/your-username/safeheaven.git`
-2. Navigate to the project directory: `cd safeheaven`
-3. Install the dependencies: `npm install`
-4. Start the development server: `npm start`
-5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
-
-## Available Scripts
-
-In the project directory, you can run the following scripts:
-
-### `npm start`
-
-Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode. See the [running tests](https://facebook.github.io/create-react-app/docs/running-tests) documentation for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder. It optimizes the build for the best performance and prepares the app for deployment.
-
-### `npm run eject`
-
-**Note: This is a one-way operation. Once you eject, you can't go back!**
-
-Ejecting from Create React App allows you to have full control over the configuration and dependencies of your project. It's an irreversible process and should be done with caution.
-
-## Learn More
-
-To learn more about Create React App and React.js, check out the following resources:
-
-- [Create React App Documentation](https://facebook.github.io/create-react-app/docs/getting-started)
-- [React Documentation](https://reactjs.org/)
-
-## Deployment
-
-To deploy the SafeHeaven web app to a production environment, you can follow the instructions provided in the [deployment documentation](https://facebook.github.io/create-react-app/docs/deployment) of Create React App.
-
-## Contributing
-
-Contributions to SafeHeaven are welcome! If you'd like to contribute, please follow the [contribution guidelines](CONTRIBUTING.md) of the project.
-
-## License
-
-SafeHaven is open-source and released under the [MIT License](LICENSE).
+## LICENSE — MIT
+Note ⚠️ — API credentials have been revoked. If you want to run the same on your local, use your own credentials.
