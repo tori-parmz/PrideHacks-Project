@@ -19,7 +19,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <RenderPage isLoggedIn={true} />
+      <RenderPage isLoggedIn={false} />
     </Provider>
   </React.StrictMode>
 );
