@@ -21,7 +21,6 @@ const Login = () => {
         marginTop: "150px",
         marginLeft: "auto",
         marginRight: "auto",
-        fontFamily: "Times New Roman",
         fontSize: "25px",
         
       }}

@@ -20,10 +20,11 @@ function AppLoggedIn() {
   return (
     <Router>
     <Routes>
-      <Route path="/" element={<User />}>
+      <Route path="/" element={<User />} />
         <Route index element={<UserHome />} />
         <Route path="blog" element={<UserBlog />} />
-        <Route path="channel" element={<Channel />} />
+        <Route path="channel" element={<Channel channels={communities}/>} >
+          <Route path=":channelId" element ={<Channel />}></Route>
         <Route path="newsfeed" element={<Newsfeed />} />
         <Route path="communities" element={<Communities />} />
         <Route path="*" element={<NoPage />} />
