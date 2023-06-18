@@ -77,9 +77,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
-# SafeHeaven
+# SafeHaven
 
-SafeHeaven is a web application where LGBTQIA+ individuals can join, chat, and read blogs in a safe and inclusive environment. Users can log in using their Google or Discord accounts to access the platform's features.
+SafeHaven is a web application where LGBTQIA+ individuals can join, chat, and read blogs in a safe and inclusive environment. Users can log in using their Google or Discord accounts to access the platform's features.
 
 ![SafeHeaven Logo](https://example.com/safeheaven_logo.png)
 ![Google Logo](https://example.com/google_logo.png)
@@ -88,11 +88,11 @@ SafeHeaven is a web application where LGBTQIA+ individuals can join, chat, and r
 
 ## Overview
 
-SafeHeaven is built using modern web technologies such as React, Node.js, MongoDB, and Redux. It provides a user-friendly interface for connecting with like-minded individuals, engaging in conversations, and exploring informative blog posts related to LGBTQIA+ topics.
+SafeHaven is built using modern web technologies such as React, Node.js, MongoDB, and Redux. It provides a user-friendly interface for connecting with like-minded individuals, engaging in conversations, and exploring informative blog posts related to LGBTQIA+ topics.
 
 ## Technologies Used
 
-SafeHeaven is built using the following technologies:
+SafeHaven is built using the following technologies:
 
 - React: A JavaScript library for building user interfaces.
 - Node.js: A JavaScript runtime environment for server-side development.
@@ -149,4 +149,4 @@ Contributions to SafeHeaven are welcome! If you'd like to contribute, please fol
 
 ## License
 
-SafeHeaven is open-source and released under the [MIT License](LICENSE).
+SafeHaven is open-source and released under the [MIT License](LICENSE).
