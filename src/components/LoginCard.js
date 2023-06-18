@@ -1,77 +1,67 @@
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
+// import { useState } from "react";
+// import Button from "react-bootstrap/Button";
+// import Card from "react-bootstrap/Card";
+// import { getAuth, signInWithRedirect, GoogleAuthProvider } from "firebase/auth";
 
-function LoginCard() {
-  const handleGoogleLogin = () => {
-    // Perform Google authentication logic
-    // Replace the placeholders with your actual Google OAuth ID and authentication logic
-    const googleOAuthId = "YOUR_GOOGLE_OAUTH_ID";
-    authenticateWithGoogle(googleOAuthId);
-  };
+// // Firebase configuration
+// const firebaseConfig = {};
 
-  const handleDiscordLogin = () => {
-    // Perform Discord authentication logic
-    // Replace the placeholders with your actual Discord OAuth ID and authentication logic
-    const discordOAuthId = "YOUR_DISCORD_OAUTH_ID";
-    authenticateWithDiscord(discordOAuthId);
-  };
+// // Initialize Firebase
+// const app = initializeApp(firebaseConfig);
+// const auth = getAuth(app);
 
-  const authenticateWithGoogle = (googleOAuthId) => {
-    // Perform Google authentication logic here
-    // Retrieve the user's ID from the local system
-    const userId = getLocalUserId();
+// function LoginCard() {
+//   const handleGoogleLogin = () => {
+//     const provider = new GoogleAuthProvider();
 
-    // Redirect the user to the Google login page with the appropriate parameters
-    // Replace the placeholders with the actual Google authentication URL and parameters
-    const googleAuthUrl = `https://accounts.google.com/o/oauth2/auth?client_id=${googleOAuthId}&redirect_uri=${window.location.origin}/google-callback&scope=email&state=${userId}&response_type=code`;
-    window.location.href = googleAuthUrl;
-  };
+//     signInWithRedirect(auth, provider)
+//       .then(() => {})
+//       .catch((error) => {
+//         console.log(error);
+//       });
+//   };
 
-  const authenticateWithDiscord = (discordOAuthId) => {
-    // Perform Discord authentication logic here
-    // Retrieve the user's ID from the local system
-    const userId = getLocalUserId();
+//   const handleDiscordLogin = () => {
+//     const discordOAuthId = "YOUR_DISCORD_OAUTH_ID";
+//     authenticateWithDiscord(discordOAuthId);
+//   };
 
-    // Redirect the user to the Discord login page with the appropriate parameters
-    // Replace the placeholders with the actual Discord authentication URL and parameters
-    const discordAuthUrl = `https://discord.com/api/oauth2/authorize?client_id=${discordOAuthId}&redirect_uri=${window.location.origin}/discord-callback&scope=email&state=${userId}&response_type=code`;
-    window.location.href = discordAuthUrl;
-  };
+//   const authenticateWithDiscord = (discordOAuthId) => {
+//     const userId = getLocalUserId();
 
-  const getLocalUserId = () => {
-    // Implement logic to retrieve the user's ID from the local system
-    // This could involve using local storage, cookies, or any other method you prefer
-    // Replace the placeholder implementation with your actual logic
-    const userId = "123456";
-    return userId;
-  };
+//     const discordAuthUrl = `https://discord.com/api/oauth2/authorize?client_id=${discordOAuthId}&redirect_uri=${window.location.origin}/discord-callback&scope=email&state=${userId}&response_type=code`;
+//     window.location.href = discordAuthUrl;
+//   };
 
-  return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        height: "100%",
-        width: "30%",
-        marginTop: "150px",
-        marginLeft: "auto",
-        marginRight: "auto",
-        fontSize: "25px",
-      }}
-      
+//   const getLocalUserId = () => {
+//     const userId = "123456";
+//     return userId;
+//   };
 
-    >
-      <Card style={{ padding: "90px" }} className="landing-page-cards">
-        <Button variant="primary" size="lg" block onClick={handleGoogleLogin}>
-          Log in with Google
-        </Button>
-        <br />
-        <Button variant="primary" size="lg" block onClick={handleDiscordLogin}>
-          Log in with Discord
-        </Button>
-      </Card>
-    </div>
-  );
-}
+//   return (
+//     <div
+//       style={{
+//         display: "flex",
+//         alignItems: "center",
+//         height: "100%",
+//         width: "30%",
+//         marginTop: "150px",
+//         marginLeft: "auto",
+//         marginRight: "auto",
+//         fontSize: "25px",
+//       }}
+//     >
+//       <Card style={{ padding: "90px" }} className="landing-page-cards">
+//         <Button variant="primary" size="lg" block onClick={handleGoogleLogin}>
+//           Log in with Google
+//         </Button>
+//         <br />
+//         <Button variant="primary" size="lg" block onClick={handleDiscordLogin}>
+//           Log in with Discord
+//         </Button>
+//       </Card>
+//     </div>
+//   );
+// }
 
-export default LoginCard;
+// export default LoginCard;
