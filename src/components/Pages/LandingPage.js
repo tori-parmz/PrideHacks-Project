@@ -15,7 +15,7 @@ class LandingPage extends Component {
       cards: [
         { 
           title: 'About Us',
-          description: 'Bloomly is an inclusive online platform designed to provide a supportive and nurturing space for LGBTQ+ individuals to freely express themselves and connect with like-minded community members.'
+          description: 'SafeHaven is an inclusive online platform designed to provide a supportive and nurturing space for LGBTQ+ individuals to freely express themselves and connect with like-minded community members.'
         },
         { 
           title: 'Our Mission',
@@ -23,11 +23,11 @@ class LandingPage extends Component {
         },
         { 
           title: 'Our Values',
-          description: 'Inclusivity, Safety, Empowerment, Community, Education, Support, Acceptance, Growth, and Love. These values guide our actions and decisions at Bloomly as we work towards creating a supportive and empowering platform for LGBTQ+ individuals to thrive.'
+          description: 'Inclusivity, Safety, Empowerment, Community, Education, Support, Acceptance, Growth, and Love. These values guide our actions and decisions at SafeHaven as we work towards creating a supportive and empowering platform for LGBTQ+ individuals to thrive.'
         },
         { 
           title: 'Join Our Community',
-          description: 'Join Bloomly today and embark on a journey of self-discovery, support, and empowerment. Together, we can foster a world where LGBTQ+ individuals feel safe, embraced, and celebrated for who they are.'
+          description: 'Join SafeHaven today and embark on a journey of self-discovery, support, and empowerment. Together, we can foster a world where LGBTQ+ individuals feel safe, embraced, and celebrated for who they are.'
         } 
       ]
     }
